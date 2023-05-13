@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkHard</title>
+    <link rel="icon" type="image" href="img/icon_web.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navbar_cor fixed-top"> 
+            <a class="fonte-titulo" href="#">WorkHard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link nav__texto" href="#">Início <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__texto" href="#">Preços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__texto" href="#">Localização</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav__texto" href="#">Contato</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+    </header>
+        <section principal>
+            <h1 class="titulo"><span class="texto__azul">WorkHard</span>, a sua academia que vale a pena.</h1>
+            <img src="/img/WorkHard_04.svg" class="img__principal" alt="Pessoas treinando">
+            <p class="subtitulo">Com o FREE PASS, você garante sete dias <span class="texto__azul">GRÁTIS</span> de treino.<br>Preencha um pequeno formulário e garanta já!
+            </p>
+
+            <!-- Botão FreePass -->
+            <button type="button" class="btn mx-auto botao" data-toggle="modal" data-target="#exampleModalCenter">
+            Garantir FREE PASS
+            </button>
+
+            <!-- Formulário Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Garanta o seu FREE PASS:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput" class="formulario__texto">Nome</label>
+                          <input type="text" class="form-control formulario__texto" id="formGroupExampleInput" placeholder="Seu nome completo">
+                        </div>
+                        <div class="form-group">
+                          <label for="formGroupExampleInput2" class="formulario__texto">E-mail</label>
+                          <input type="email" class="form-control formulario__texto" id="formGroupExampleInput2" placeholder="Seu melhor e-mail">
+                        </div>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput3" class="formulario__texto">Telefone</label>
+                            <input type="tel" class="form-control formulario__texto" id="formGroupExampleInput2" placeholder="(DDD) 12345-6789">
+                          </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn botao">Enviar</button>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="vantagens">
+            <h2 class="titulo__vantagens">Conheça algumas de nossas vantagens:</h2>
+            <ul class="vantagens__lista">
+                <li>
+                    <h3 class="item__vantagens">GINÁSTICA</h3>
+                    <img src="img/WorkHard_02.svg" alt="" class="img__vantagens">
+                    <p class="descricao__vantagens">O objetivo desta atividade consiste em manter e melhorar as performances individuais e também coletivas.</p>
+                </li>
+                <li>
+                    <h3 class="item__vantagens">MUSCULAÇÃO</h3>
+                    <img src="img/WorkHard_01.svg" alt="" class="img__vantagens">
+                    <p class="descricao__vantagens">Um tipo de exercício físico realizado com pesos de diversas cargas, aplicável a pessoas de diversas idades e com diferentes objetivos.</p>
+                </li>
+                <li>
+                    <h3 class="item__vantagens">ACOMPANHAMENTO</h3>
+                    <img src="img/WorkHard_03.svg" alt="" class="img__vantagens">
+                    <p class="descricao__vantagens">Possuímos um acompanhamento em nosso APP exclusivo para monitoramento do seu treino e sua evolução.</p>
+                </li>
+            </ul>
+        </section>
+        <footer class="rodape">
+            <ul>
+                <li>
+                    <p class="illustrations">Illustrations ©</p>
+                </li>
+                <li>
+                    <a href="https://storyset.com/sport" class="storyset">Sport illustrations by Storyset</a>
+                </li>
+                <li>
+                    <a href="https://storyset.com/workout" class="storyset">Workout illustrations by Storyset</a>
+                </li>
+            </ul>
+        </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
