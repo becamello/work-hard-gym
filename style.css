@@ -121,7 +121,7 @@
     margin-top: 30px;
 }
 
-.descricao__vantagens, .localizacao__texto {
+.descricao__vantagens {
     font-family: 'Montserrat', sans-serif;
     color: var(--cor-secundaria);
     font-size: 9px;
@@ -150,12 +150,13 @@
     padding: 40px;
     border: 0px;
     border-radius: 50px;
+    text-align: center;
 }
 
-.localizacao__descricao {
+.localizacao__descricao, .localizacao__texto {
     font-family: 'Montserrat', sans-serif;
     color: var(--cor-secundaria);
-    font-size: 10px;
+    font-size: 11px;
     text-align: center;
 }
 
